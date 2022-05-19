@@ -10,6 +10,10 @@
 	margin-top: 1.8125rem;
 	margin-bottom: 2.4rem;
 
+	@include abs.breakpoint(medium) {
+		margin-bottom: 4rem;
+	}
+
 	&__img {
 		width: 40%;
 		aspect-ratio: 1;

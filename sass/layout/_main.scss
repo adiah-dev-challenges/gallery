@@ -1,3 +1,5 @@
+@use '../abstracts' as abs;
+
 .gallery {
 	padding-inline: 0.75rem;
 	display: grid;
@@ -8,6 +10,12 @@
 		'three	three	four'
 		'six	five 	four';
 	gap: 0.75rem;
+
+	@include abs.breakpoint(medium) {
+		width: 66%;
+		max-width: abs.rem(960);
+		margin-inline: auto;
+	}
 
 	&__img {
 		border-radius: 0.75rem;

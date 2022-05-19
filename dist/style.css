@@ -91,6 +91,11 @@ select {
   margin-top: 1.8125rem;
   margin-bottom: 2.4rem;
 }
+@media (min-width: 43.75em) {
+  .profile {
+    margin-bottom: 4rem;
+  }
+}
 .profile__img {
   width: 40%;
   aspect-ratio: 1;
@@ -135,6 +140,13 @@ select {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "one	two		two" "three	three	four" "six	five 	four";
   gap: 0.75rem;
+}
+@media (min-width: 43.75em) {
+  .gallery {
+    width: 66%;
+    max-width: 60rem;
+    margin-inline: auto;
+  }
 }
 .gallery__img {
   border-radius: 0.75rem;
