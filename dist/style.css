@@ -94,6 +94,7 @@ select {
 @media (min-width: 43.75em) {
   .profile {
     margin-bottom: 4rem;
+    margin-top: 3.75rem;
   }
 }
 .profile__img {
