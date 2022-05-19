@@ -149,6 +149,7 @@ select {
     max-width: 60rem;
     margin-inline: auto;
     margin-bottom: 8.375rem;
+    gap: 2rem 2.25rem;
   }
 }
 .gallery__img {
