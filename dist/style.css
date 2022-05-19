@@ -89,6 +89,7 @@ select {
   max-width: 21.75rem;
   margin-inline: auto;
   margin-top: 1.8125rem;
+  margin-bottom: 2.4rem;
 }
 .profile__img {
   width: 40%;
@@ -125,6 +126,36 @@ select {
   .profile-stat__label {
     font-size: var(--fs-300);
   }
+}
+
+.gallery {
+  padding-inline: 0.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "one	two		two" "three	three	four" "six	five 	four";
+  gap: 0.75rem;
+}
+.gallery__img {
+  border-radius: 0.75rem;
+}
+.gallery__img--1 {
+  grid-area: one;
+}
+.gallery__img--2 {
+  grid-area: two;
+}
+.gallery__img--3 {
+  grid-area: three;
+}
+.gallery__img--4 {
+  grid-area: four;
+}
+.gallery__img--5 {
+  grid-area: five;
+}
+.gallery__img--6 {
+  grid-area: six;
 }
 
 .sr-only {

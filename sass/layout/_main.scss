@@ -1,0 +1,27 @@
+.gallery {
+	padding-inline: 0.75rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+		'one	two		two'
+		'three	three	four'
+		'six	five 	four';
+	gap: 0.75rem;
+
+	&__img {
+		border-radius: 0.75rem;
+
+		&--1 { grid-area: one; }
+		
+		&--2 { grid-area: two; }
+			
+		&--3 { grid-area: three; }
+			
+		&--4 { grid-area: four; }
+
+		&--5 { grid-area: five; }
+
+		&--6 { grid-area: six; }
+	}
+}
