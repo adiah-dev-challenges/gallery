@@ -140,12 +140,15 @@ select {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "one	two		two" "three	three	four" "six	five 	four";
   gap: 0.75rem;
+  align-items: stretch;
+  margin-bottom: 2.625rem;
 }
 @media (min-width: 43.75em) {
   .gallery {
     width: 66%;
     max-width: 60rem;
     margin-inline: auto;
+    margin-bottom: 8.375rem;
   }
 }
 .gallery__img {
@@ -168,6 +171,23 @@ select {
 }
 .gallery__img--6 {
   grid-area: six;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+.footer__attribution {
+  font-weight: 500;
+  font-family: var(--ff-sans);
+  color: #A9A9A9;
+}
+.footer__link {
+  color: #A9A9A9;
+  font-weight: 700;
 }
 
 .sr-only {

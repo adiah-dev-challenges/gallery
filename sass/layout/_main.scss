@@ -10,11 +10,14 @@
 		'three	three	four'
 		'six	five 	four';
 	gap: 0.75rem;
+	align-items: stretch;
+	margin-bottom: 2.625rem;
 
 	@include abs.breakpoint(medium) {
 		width: 66%;
 		max-width: abs.rem(960);
 		margin-inline: auto;
+		margin-bottom: 8.375rem;
 	}
 
 	&__img {
@@ -31,5 +34,24 @@
 		&--5 { grid-area: five; }
 
 		&--6 { grid-area: six; }
+	}
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	margin-top: auto;
+	margin-bottom: 1.5rem;
+	font-size: 0.875rem;
+
+	&__attribution {
+		font-weight: 500;
+		font-family: var(--ff-sans);
+		color: #A9A9A9;
+	}
+
+	&__link {
+		color: #A9A9A9;
+		font-weight: 700;
 	}
 }
